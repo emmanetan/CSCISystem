@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSCISystem
 {
-    public partial class Form1: Form
+    public partial class POS: Form
     {
-        public Form1()
+        public POS()
         {
             InitializeComponent();
         }
