@@ -35,7 +35,7 @@
             // 
             this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.White;
             this.siticoneShadowPanel3.Location = new System.Drawing.Point(0, 0);
             this.siticoneShadowPanel3.Name = "siticoneShadowPanel3";
             this.siticoneShadowPanel3.Radius = 10;

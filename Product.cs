@@ -20,8 +20,7 @@ namespace CSCISystem
         private void ButtonAddProd_Click(object sender, EventArgs e)
         {
             AddProduct addProduct = new AddProduct();
-            addProduct.Show();
-            addProduct.Focus();
+            addProduct.ShowDialog();           
         }
     }
 }
