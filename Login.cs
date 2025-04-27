@@ -30,7 +30,6 @@ namespace CSCISystem
             inventory.Show();
                
         }
-
         private void BtnPOS_Click(object sender, EventArgs e)
         {
             Login.ActiveForm.Hide();

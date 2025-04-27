@@ -41,8 +41,10 @@
             this.HomeBtn = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.ProductBtn = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.UserBtn = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.siticoneShadowPanel3 = new Siticone.UI.WinForms.SiticoneShadowPanel();
+            this.mainpanel = new Siticone.UI.WinForms.SiticoneShadowPanel();
             this.dropDownTimer = new System.Windows.Forms.Timer(this.components);
+            this.loadingTimer = new System.Windows.Forms.Timer(this.components);
+            this.fadeTimer = new System.Windows.Forms.Timer(this.components);
             this.siticoneShadowPanel1.SuspendLayout();
             this.siticoneShadowPanel2.SuspendLayout();
             this.panelDropDown.SuspendLayout();
@@ -55,19 +57,20 @@
             this.siticoneShadowPanel1.Controls.Add(this.siticoneRoundedButton7);
             this.siticoneShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.siticoneShadowPanel1.Location = new System.Drawing.Point(0, 0);
+            this.siticoneShadowPanel1.Location = new System.Drawing.Point(5, 5);
             this.siticoneShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
-            this.siticoneShadowPanel1.Radius = 15;
+            this.siticoneShadowPanel1.Radius = 10;
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneShadowPanel1.ShadowDepth = 50;
-            this.siticoneShadowPanel1.Size = new System.Drawing.Size(1193, 83);
+            this.siticoneShadowPanel1.Size = new System.Drawing.Size(1183, 83);
             this.siticoneShadowPanel1.TabIndex = 0;
             // 
             // siticoneLabel1
             // 
             this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
             this.siticoneLabel1.Location = new System.Drawing.Point(85, 28);
             this.siticoneLabel1.Name = "siticoneLabel1";
             this.siticoneLabel1.Size = new System.Drawing.Size(179, 28);
@@ -86,7 +89,7 @@
             this.siticoneRoundedButton7.Image = ((System.Drawing.Image)(resources.GetObject("siticoneRoundedButton7.Image")));
             this.siticoneRoundedButton7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneRoundedButton7.ImageSize = new System.Drawing.Size(27, 27);
-            this.siticoneRoundedButton7.Location = new System.Drawing.Point(1067, 20);
+            this.siticoneRoundedButton7.Location = new System.Drawing.Point(1057, 20);
             this.siticoneRoundedButton7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneRoundedButton7.Name = "siticoneRoundedButton7";
             this.siticoneRoundedButton7.ShadowDecoration.Parent = this.siticoneRoundedButton7;
@@ -104,13 +107,13 @@
             this.siticoneShadowPanel2.Controls.Add(this.UserBtn);
             this.siticoneShadowPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.siticoneShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.siticoneShadowPanel2.Location = new System.Drawing.Point(0, 83);
+            this.siticoneShadowPanel2.Location = new System.Drawing.Point(5, 88);
             this.siticoneShadowPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneShadowPanel2.Name = "siticoneShadowPanel2";
             this.siticoneShadowPanel2.Radius = 10;
             this.siticoneShadowPanel2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneShadowPanel2.ShadowDepth = 50;
-            this.siticoneShadowPanel2.Size = new System.Drawing.Size(322, 638);
+            this.siticoneShadowPanel2.Size = new System.Drawing.Size(322, 628);
             this.siticoneShadowPanel2.TabIndex = 1;
             // 
             // panelDropDown
@@ -164,6 +167,7 @@
             this.SalesRBtn.TabIndex = 4;
             this.SalesRBtn.Text = "       Sales Report";
             this.SalesRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SalesRBtn.Click += new System.EventHandler(this.SalesRBtn_Click);
             // 
             // InventoryRBtn
             // 
@@ -185,6 +189,7 @@
             this.InventoryRBtn.TabIndex = 5;
             this.InventoryRBtn.Text = "        Inventory Report";
             this.InventoryRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.InventoryRBtn.Click += new System.EventHandler(this.InventoryRBtn_Click);
             // 
             // HomeBtn
             // 
@@ -205,6 +210,7 @@
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // ProductBtn
             // 
@@ -225,6 +231,7 @@
             this.ProductBtn.TabIndex = 2;
             this.ProductBtn.Text = "Product";
             this.ProductBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ProductBtn.Click += new System.EventHandler(this.ProductBtn_Click);
             // 
             // UserBtn
             // 
@@ -245,41 +252,49 @@
             this.UserBtn.TabIndex = 1;
             this.UserBtn.Text = "User";
             this.UserBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.UserBtn.Click += new System.EventHandler(this.UserBtn_Click);
             // 
-            // siticoneShadowPanel3
+            // mainpanel
             // 
-            this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.siticoneShadowPanel3.Location = new System.Drawing.Point(322, 83);
-            this.siticoneShadowPanel3.Name = "siticoneShadowPanel3";
-            this.siticoneShadowPanel3.Radius = 10;
-            this.siticoneShadowPanel3.ShadowColor = System.Drawing.Color.Black;
-            this.siticoneShadowPanel3.ShadowDepth = 50;
-            this.siticoneShadowPanel3.Size = new System.Drawing.Size(871, 638);
-            this.siticoneShadowPanel3.TabIndex = 2;
+            this.mainpanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.mainpanel.Location = new System.Drawing.Point(327, 88);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Radius = 10;
+            this.mainpanel.ShadowColor = System.Drawing.Color.Black;
+            this.mainpanel.ShadowDepth = 50;
+            this.mainpanel.Size = new System.Drawing.Size(861, 628);
+            this.mainpanel.TabIndex = 2;
             // 
             // dropDownTimer
             // 
             this.dropDownTimer.Interval = 1;
             this.dropDownTimer.Tick += new System.EventHandler(this.dropDownTimer_Tick);
             // 
+            // loadingTimer
+            // 
+            this.loadingTimer.Interval = 1000;
+            this.loadingTimer.Tick += new System.EventHandler(this.loadingTimer_Tick);
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
             this.ClientSize = new System.Drawing.Size(1193, 721);
-            this.Controls.Add(this.siticoneShadowPanel3);
+            this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.siticoneShadowPanel2);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inventory";
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Inventory_Load);
             this.siticoneShadowPanel1.ResumeLayout(false);
             this.siticoneShadowPanel1.PerformLayout();
             this.siticoneShadowPanel2.ResumeLayout(false);
@@ -300,8 +315,10 @@
         private Siticone.UI.WinForms.SiticoneRoundedButton SalesRBtn;
         private Siticone.UI.WinForms.SiticoneRoundedButton InventoryRBtn;
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton7;
-        private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel3;
+        private Siticone.UI.WinForms.SiticoneShadowPanel mainpanel;
         private Siticone.UI.WinForms.SiticoneLabel siticoneLabel1;
         private System.Windows.Forms.Timer dropDownTimer;
+        private System.Windows.Forms.Timer loadingTimer;
+        private System.Windows.Forms.Timer fadeTimer;
     }
 }
