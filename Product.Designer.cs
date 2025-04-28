@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             this.siticoneShadowPanel3 = new Siticone.UI.WinForms.SiticoneShadowPanel();
             this.ButtonAddProd = new AntdUI.Button();
-            this.table1 = new AntdUI.Table();
             this.siticoneShadowPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +38,6 @@
             // 
             this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.siticoneShadowPanel3.Controls.Add(this.ButtonAddProd);
-            this.siticoneShadowPanel3.Controls.Add(this.table1);
             this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.siticoneShadowPanel3.Location = new System.Drawing.Point(0, 0);
@@ -66,17 +64,6 @@
             this.ButtonAddProd.WaveSize = 0;
             this.ButtonAddProd.Click += new System.EventHandler(this.ButtonAddProd_Click);
             // 
-            // table1
-            // 
-            this.table1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.table1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.table1.Location = new System.Drawing.Point(19, 150);
-            this.table1.Name = "table1";
-            this.table1.Size = new System.Drawing.Size(817, 426);
-            this.table1.TabIndex = 0;
-            this.table1.Text = "table1";
-            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,7 +82,6 @@
         #endregion
 
         private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel3;
-        private AntdUI.Table table1;
         private AntdUI.Button ButtonAddProd;
     }
 }
