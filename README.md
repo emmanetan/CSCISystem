@@ -1,3 +1,1 @@
-Commit
-Push
-Sync
+
