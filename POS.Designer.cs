@@ -33,6 +33,7 @@
             this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneRoundedTextBox1 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.siticoneShadowPanel1 = new Siticone.UI.WinForms.SiticoneShadowPanel();
+            this.button1 = new AntdUI.Button();
             this.siticoneShadowPanel2 = new Siticone.UI.WinForms.SiticoneShadowPanel();
             this.siticoneShadowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +101,7 @@
             // siticoneShadowPanel1
             // 
             this.siticoneShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneShadowPanel1.Controls.Add(this.button1);
             this.siticoneShadowPanel1.Controls.Add(this.siticoneRoundedTextBox1);
             this.siticoneShadowPanel1.FillColor = System.Drawing.Color.White;
             this.siticoneShadowPanel1.Location = new System.Drawing.Point(12, 109);
@@ -108,6 +110,15 @@
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(805, 600);
             this.siticoneShadowPanel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.ColorScheme = AntdUI.TAMode.Dark;
+            this.button1.Location = new System.Drawing.Point(489, 433);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(219, 41);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
             // 
             // siticoneShadowPanel2
             // 
@@ -149,5 +160,6 @@
         private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox1;
         private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel1;
         private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel2;
+        private AntdUI.Button button1;
     }
 }

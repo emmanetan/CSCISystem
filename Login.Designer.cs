@@ -37,6 +37,7 @@
             this.BtnInventory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnInventory.CheckedState.Parent = this.BtnInventory;
             this.BtnInventory.CustomImages.Parent = this.BtnInventory;
+            this.BtnInventory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnInventory.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnInventory.ForeColor = System.Drawing.Color.White;
             this.BtnInventory.HoveredState.Parent = this.BtnInventory;
@@ -53,6 +54,7 @@
             this.BtnPOS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnPOS.CheckedState.Parent = this.BtnPOS;
             this.BtnPOS.CustomImages.Parent = this.BtnPOS;
+            this.BtnPOS.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnPOS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnPOS.ForeColor = System.Drawing.Color.White;
             this.BtnPOS.HoveredState.Parent = this.BtnPOS;
