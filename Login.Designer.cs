@@ -40,7 +40,7 @@
             this.BtnInventory.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnInventory.ForeColor = System.Drawing.Color.White;
             this.BtnInventory.HoveredState.Parent = this.BtnInventory;
-            this.BtnInventory.Location = new System.Drawing.Point(111, 532);
+            this.BtnInventory.Location = new System.Drawing.Point(103, 327);
             this.BtnInventory.Name = "BtnInventory";
             this.BtnInventory.ShadowDecoration.Parent = this.BtnInventory;
             this.BtnInventory.Size = new System.Drawing.Size(180, 45);
@@ -56,7 +56,7 @@
             this.BtnPOS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnPOS.ForeColor = System.Drawing.Color.White;
             this.BtnPOS.HoveredState.Parent = this.BtnPOS;
-            this.BtnPOS.Location = new System.Drawing.Point(317, 532);
+            this.BtnPOS.Location = new System.Drawing.Point(309, 327);
             this.BtnPOS.Name = "BtnPOS";
             this.BtnPOS.ShadowDecoration.Parent = this.BtnPOS;
             this.BtnPOS.Size = new System.Drawing.Size(180, 45);
@@ -69,13 +69,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(664, 630);
+            this.ClientSize = new System.Drawing.Size(604, 630);
             this.Controls.Add(this.BtnPOS);
             this.Controls.Add(this.BtnInventory);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

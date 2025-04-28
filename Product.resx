@@ -120,17 +120,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ButtonAddProd.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIhSURBVHhe7d2/ahVBGIbxRBALGY1mqikkFjLM2G49kELE
-        f9VO4QUo2FhoEAzCQO5mr0ivQAgWIoFoqWxIcfKxCIK754V9fvBB4MzAZB4InHCWs7MDAAAAAAAAAAAA
-        aS7726GmF6Gm5+PP9nUsKLZy3A39z27of1/OeWzlg12HBcRW3m+EuDKxlTd2PWbksr/eDf2ZDbEx31z2
-        u3YfZhJqejAR4cqEmu7ZfZhJqOmhDWAn1JTtPsyEIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKG
-        IGIIIoYgYggihiBiCCKGIGIIIoYgYggihiD/INS0H2o6mHNiK49sADvjGrtvhtm3v7+M2MrLbui/2ItZ
-        wXyOrVR7H1sVW3k7cdBVTWzllb2XrXDZ3+2G/pc94ArnzGV/097P4kJNzyYOt8oJNR3a+1lcqOmJPdha
-        J9T02N7P4lz2d/iTdTHnMo/UxVZOJg64qomtfLL3sjXj00qxlY/d0P+wB13BfI+tvHPZ22vZPpf9jYk3
-        T/99hN4YHoyP19l7WB3+dSKGIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBi
-        CCKGIGIIIoYgYggihiBiQk33bQA744fY7D7MxGV/rRv6UxthY76Oa+w+zOhvT23FVl7b9VjA+Ilz8yjE
-        +IUuR3YdFuSy37v8yqOnLvtb9nUAAAAAAAAAAABo+QMg1PYpchhg1wAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAiFJREFUeF7t3b9qFUEYhvFEEAsZjWaqKSQWMszYbj2QQsR/1U7hBSjYWGgQDMJA
+        7mavSK9ACBYigWipbEhx8rEIgrvnhX1+8EHgzMBkHgiccJazswMAAAAAAAAAAABpLvvboaYXoabn48/2
+        dSwotnLcDf3Pbuh/X855bOWDXYcFxFbeb4S4MrGVN3Y9ZuSyv94N/ZkNsTHfXPa7dh9mEmp6MBHhyoSa
+        7tl9mEmo6aENYCfUlO0+zIQgYggihiBiCCKGIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKGIGII
+        IoYgYggihiBiCCKGIP8g1LQfajqYc2Irj2wAO+Mau2+G2be/v4zYystu6L/Yi1nBfI6tVHsfWxVbeTtx
+        0FVNbOWVvZetcNnf7Yb+lz3gCufMZX/T3s/iQk3PJg63ygk1Hdr7WVyo6Yk92Fon1PTY3s/iXPZ3+JN1
+        Mecyj9TFVk4mDriqia18sveyNePTSrGVj93Q/7AHXcF8j628c9nba9k+l/2NiTdP/32E3hgejI/X2XtY
+        Hf51IoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKGIGIIIoYgYggihiBiCCKG
+        IGJCTfdtADvjh9jsPszEZX+tG/pTG2Fjvo5r7D7M6G9PbcVWXtv1WMD4iXPzKMT4hS5Hdh0W5LLfu/zK
+        o6cu+1v2dQAAAAAAAAAAAGj5AyDU9ilyGGDXAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

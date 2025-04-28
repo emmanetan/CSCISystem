@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             this.siticoneShadowPanel3 = new Siticone.UI.WinForms.SiticoneShadowPanel();
-            this.table1 = new AntdUI.Table();
             this.ButtonAddProd = new AntdUI.Button();
+            this.table1 = new AntdUI.Table();
             this.siticoneShadowPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,17 +50,6 @@
             this.siticoneShadowPanel3.Size = new System.Drawing.Size(855, 599);
             this.siticoneShadowPanel3.TabIndex = 3;
             // 
-            // table1
-            // 
-            this.table1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.table1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.table1.Location = new System.Drawing.Point(19, 150);
-            this.table1.Name = "table1";
-            this.table1.Size = new System.Drawing.Size(817, 426);
-            this.table1.TabIndex = 0;
-            this.table1.Text = "table1";
-            // 
             // ButtonAddProd
             // 
             this.ButtonAddProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -76,6 +65,17 @@
             this.ButtonAddProd.TabIndex = 1;
             this.ButtonAddProd.WaveSize = 0;
             this.ButtonAddProd.Click += new System.EventHandler(this.ButtonAddProd_Click);
+            // 
+            // table1
+            // 
+            this.table1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.table1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.table1.Location = new System.Drawing.Point(19, 150);
+            this.table1.Name = "table1";
+            this.table1.Size = new System.Drawing.Size(817, 426);
+            this.table1.TabIndex = 0;
+            this.table1.Text = "table1";
             // 
             // Product
             // 
