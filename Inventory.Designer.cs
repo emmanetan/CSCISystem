@@ -45,9 +45,16 @@
             this.dropDownTimer = new System.Windows.Forms.Timer(this.components);
             this.loadingTimer = new System.Windows.Forms.Timer(this.components);
             this.fadeTimer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new AntdUI.Button();
+            this.button2 = new AntdUI.Button();
+            this.button3 = new AntdUI.Button();
+            this.button4 = new AntdUI.Button();
+            this.button5 = new AntdUI.Button();
+            this.button6 = new AntdUI.Button();
             this.siticoneShadowPanel1.SuspendLayout();
             this.siticoneShadowPanel2.SuspendLayout();
             this.panelDropDown.SuspendLayout();
+            this.mainpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneShadowPanel1
@@ -56,7 +63,7 @@
             this.siticoneShadowPanel1.Controls.Add(this.siticoneLabel1);
             this.siticoneShadowPanel1.Controls.Add(this.siticoneRoundedButton7);
             this.siticoneShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.siticoneShadowPanel1.Location = new System.Drawing.Point(5, 5);
             this.siticoneShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
@@ -70,7 +77,7 @@
             // 
             this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.siticoneLabel1.ForeColor = System.Drawing.Color.Black;
             this.siticoneLabel1.Location = new System.Drawing.Point(85, 28);
             this.siticoneLabel1.Name = "siticoneLabel1";
             this.siticoneLabel1.Size = new System.Drawing.Size(179, 28);
@@ -101,12 +108,12 @@
             // siticoneShadowPanel2
             // 
             this.siticoneShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneShadowPanel2.Controls.Add(this.button3);
+            this.siticoneShadowPanel2.Controls.Add(this.button2);
             this.siticoneShadowPanel2.Controls.Add(this.panelDropDown);
-            this.siticoneShadowPanel2.Controls.Add(this.HomeBtn);
-            this.siticoneShadowPanel2.Controls.Add(this.ProductBtn);
-            this.siticoneShadowPanel2.Controls.Add(this.UserBtn);
+            this.siticoneShadowPanel2.Controls.Add(this.button1);
             this.siticoneShadowPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.siticoneShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.siticoneShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.siticoneShadowPanel2.Location = new System.Drawing.Point(5, 88);
             this.siticoneShadowPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneShadowPanel2.Name = "siticoneShadowPanel2";
@@ -118,12 +125,13 @@
             // 
             // panelDropDown
             // 
-            this.panelDropDown.Controls.Add(this.ReportBtn);
-            this.panelDropDown.Controls.Add(this.SalesRBtn);
-            this.panelDropDown.Controls.Add(this.InventoryRBtn);
-            this.panelDropDown.Location = new System.Drawing.Point(24, 225);
+            this.panelDropDown.Controls.Add(this.button4);
+            this.panelDropDown.Controls.Add(this.button6);
+            this.panelDropDown.Controls.Add(this.button5);
+            this.panelDropDown.Location = new System.Drawing.Point(27, 175);
             this.panelDropDown.Name = "panelDropDown";
-            this.panelDropDown.Size = new System.Drawing.Size(284, 67);
+            this.panelDropDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panelDropDown.Size = new System.Drawing.Size(268, 141);
             this.panelDropDown.TabIndex = 2;
             // 
             // ReportBtn
@@ -134,14 +142,13 @@
             this.ReportBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReportBtn.ForeColor = System.Drawing.Color.Black;
             this.ReportBtn.HoveredState.Parent = this.ReportBtn;
-            this.ReportBtn.Image = ((System.Drawing.Image)(resources.GetObject("ReportBtn.Image")));
             this.ReportBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ReportBtn.ImageSize = new System.Drawing.Size(35, 35);
-            this.ReportBtn.Location = new System.Drawing.Point(4, 5);
+            this.ReportBtn.Location = new System.Drawing.Point(513, 29);
             this.ReportBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ReportBtn.Name = "ReportBtn";
             this.ReportBtn.ShadowDecoration.Parent = this.ReportBtn;
-            this.ReportBtn.Size = new System.Drawing.Size(277, 56);
+            this.ReportBtn.Size = new System.Drawing.Size(277, 49);
             this.ReportBtn.TabIndex = 3;
             this.ReportBtn.Text = "Report";
             this.ReportBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -155,17 +162,15 @@
             this.SalesRBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesRBtn.ForeColor = System.Drawing.Color.Black;
             this.SalesRBtn.HoveredState.Parent = this.SalesRBtn;
-            this.SalesRBtn.Image = ((System.Drawing.Image)(resources.GetObject("SalesRBtn.Image")));
             this.SalesRBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SalesRBtn.ImageOffset = new System.Drawing.Point(25, 0);
             this.SalesRBtn.ImageSize = new System.Drawing.Size(33, 33);
-            this.SalesRBtn.Location = new System.Drawing.Point(4, 71);
+            this.SalesRBtn.Location = new System.Drawing.Point(570, 88);
             this.SalesRBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SalesRBtn.Name = "SalesRBtn";
             this.SalesRBtn.ShadowDecoration.Parent = this.SalesRBtn;
-            this.SalesRBtn.Size = new System.Drawing.Size(277, 56);
+            this.SalesRBtn.Size = new System.Drawing.Size(220, 49);
             this.SalesRBtn.TabIndex = 4;
-            this.SalesRBtn.Text = "       Sales Report";
+            this.SalesRBtn.Text = " Sales Report";
             this.SalesRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SalesRBtn.Click += new System.EventHandler(this.SalesRBtn_Click);
             // 
@@ -177,36 +182,34 @@
             this.InventoryRBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InventoryRBtn.ForeColor = System.Drawing.Color.Black;
             this.InventoryRBtn.HoveredState.Parent = this.InventoryRBtn;
-            this.InventoryRBtn.Image = ((System.Drawing.Image)(resources.GetObject("InventoryRBtn.Image")));
             this.InventoryRBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.InventoryRBtn.ImageOffset = new System.Drawing.Point(25, 0);
             this.InventoryRBtn.ImageSize = new System.Drawing.Size(33, 33);
-            this.InventoryRBtn.Location = new System.Drawing.Point(4, 137);
+            this.InventoryRBtn.Location = new System.Drawing.Point(570, 147);
             this.InventoryRBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.InventoryRBtn.Name = "InventoryRBtn";
             this.InventoryRBtn.ShadowDecoration.Parent = this.InventoryRBtn;
-            this.InventoryRBtn.Size = new System.Drawing.Size(277, 56);
+            this.InventoryRBtn.Size = new System.Drawing.Size(220, 49);
             this.InventoryRBtn.TabIndex = 5;
-            this.InventoryRBtn.Text = "        Inventory Report";
+            this.InventoryRBtn.Text = " Inventory Report";
             this.InventoryRBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.InventoryRBtn.Click += new System.EventHandler(this.InventoryRBtn_Click);
             // 
             // HomeBtn
             // 
+            this.HomeBtn.BackColor = System.Drawing.Color.Transparent;
             this.HomeBtn.CheckedState.Parent = this.HomeBtn;
             this.HomeBtn.CustomImages.Parent = this.HomeBtn;
-            this.HomeBtn.FillColor = System.Drawing.Color.White;
+            this.HomeBtn.FillColor = System.Drawing.Color.DimGray;
             this.HomeBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
             this.HomeBtn.HoveredState.Parent = this.HomeBtn;
-            this.HomeBtn.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtn.Image")));
             this.HomeBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.HomeBtn.ImageSize = new System.Drawing.Size(35, 35);
-            this.HomeBtn.Location = new System.Drawing.Point(27, 29);
+            this.HomeBtn.Location = new System.Drawing.Point(147, 121);
             this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.ShadowDecoration.Parent = this.HomeBtn;
-            this.HomeBtn.Size = new System.Drawing.Size(277, 56);
+            this.HomeBtn.Size = new System.Drawing.Size(277, 49);
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -220,14 +223,13 @@
             this.ProductBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductBtn.ForeColor = System.Drawing.Color.Black;
             this.ProductBtn.HoveredState.Parent = this.ProductBtn;
-            this.ProductBtn.Image = ((System.Drawing.Image)(resources.GetObject("ProductBtn.Image")));
             this.ProductBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ProductBtn.ImageSize = new System.Drawing.Size(35, 35);
-            this.ProductBtn.Location = new System.Drawing.Point(27, 95);
+            this.ProductBtn.Location = new System.Drawing.Point(147, 187);
             this.ProductBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProductBtn.Name = "ProductBtn";
             this.ProductBtn.ShadowDecoration.Parent = this.ProductBtn;
-            this.ProductBtn.Size = new System.Drawing.Size(277, 56);
+            this.ProductBtn.Size = new System.Drawing.Size(277, 49);
             this.ProductBtn.TabIndex = 2;
             this.ProductBtn.Text = "Product";
             this.ProductBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -241,14 +243,13 @@
             this.UserBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserBtn.ForeColor = System.Drawing.Color.Black;
             this.UserBtn.HoveredState.Parent = this.UserBtn;
-            this.UserBtn.Image = ((System.Drawing.Image)(resources.GetObject("UserBtn.Image")));
             this.UserBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.UserBtn.ImageSize = new System.Drawing.Size(35, 35);
-            this.UserBtn.Location = new System.Drawing.Point(27, 161);
+            this.UserBtn.Location = new System.Drawing.Point(147, 253);
             this.UserBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.UserBtn.Name = "UserBtn";
             this.UserBtn.ShadowDecoration.Parent = this.UserBtn;
-            this.UserBtn.Size = new System.Drawing.Size(277, 56);
+            this.UserBtn.Size = new System.Drawing.Size(277, 49);
             this.UserBtn.TabIndex = 1;
             this.UserBtn.Text = "User";
             this.UserBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -257,8 +258,14 @@
             // mainpanel
             // 
             this.mainpanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainpanel.Controls.Add(this.ReportBtn);
+            this.mainpanel.Controls.Add(this.SalesRBtn);
+            this.mainpanel.Controls.Add(this.InventoryRBtn);
+            this.mainpanel.Controls.Add(this.HomeBtn);
+            this.mainpanel.Controls.Add(this.ProductBtn);
+            this.mainpanel.Controls.Add(this.UserBtn);
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.mainpanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.mainpanel.Location = new System.Drawing.Point(327, 88);
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Radius = 10;
@@ -277,11 +284,101 @@
             this.loadingTimer.Interval = 1000;
             this.loadingTimer.Tick += new System.EventHandler(this.loadingTimer_Tick);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Ghost = true;
+            this.button1.HandCursor = System.Windows.Forms.Cursors.Default;
+            this.button1.IconHover = ((System.Drawing.Image)(resources.GetObject("button1.IconHover")));
+            this.button1.Location = new System.Drawing.Point(27, 38);
+            this.button1.Name = "button1";
+            this.button1.Radius = 20;
+            this.button1.Size = new System.Drawing.Size(265, 44);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Home";
+            this.button1.Toggle = true;
+            this.button1.WaveSize = 0;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Ghost = true;
+            this.button2.Icon = ((System.Drawing.Image)(resources.GetObject("button2.Icon")));
+            this.button2.IconRatio = 1F;
+            this.button2.LoadingRespondClick = true;
+            this.button2.Location = new System.Drawing.Point(27, 84);
+            this.button2.Name = "button2";
+            this.button2.Radius = 20;
+            this.button2.Size = new System.Drawing.Size(268, 40);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Product";
+            this.button2.WaveSize = 0;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Ghost = true;
+            this.button3.Icon = ((System.Drawing.Image)(resources.GetObject("button3.Icon")));
+            this.button3.IconRatio = 1F;
+            this.button3.Location = new System.Drawing.Point(27, 130);
+            this.button3.Name = "button3";
+            this.button3.Radius = 20;
+            this.button3.Size = new System.Drawing.Size(268, 40);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "User";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.WaveSize = 0;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Ghost = true;
+            this.button4.Icon = ((System.Drawing.Image)(resources.GetObject("button4.Icon")));
+            this.button4.IconRatio = 1F;
+            this.button4.Location = new System.Drawing.Point(0, 3);
+            this.button4.Name = "button4";
+            this.button4.Radius = 20;
+            this.button4.Size = new System.Drawing.Size(265, 40);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Report";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.WaveSize = 0;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Ghost = true;
+            this.button5.Icon = ((System.Drawing.Image)(resources.GetObject("button5.Icon")));
+            this.button5.IconRatio = 1F;
+            this.button5.Location = new System.Drawing.Point(58, 95);
+            this.button5.Name = "button5";
+            this.button5.Radius = 20;
+            this.button5.Size = new System.Drawing.Size(207, 40);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Inventory Report";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.WaveSize = 0;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Ghost = true;
+            this.button6.Icon = ((System.Drawing.Image)(resources.GetObject("button6.Icon")));
+            this.button6.IconRatio = 1F;
+            this.button6.Location = new System.Drawing.Point(58, 49);
+            this.button6.Name = "button6";
+            this.button6.Radius = 20;
+            this.button6.Size = new System.Drawing.Size(207, 40);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Sales Report";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.WaveSize = 0;
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1193, 721);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.siticoneShadowPanel2);
@@ -299,6 +396,7 @@
             this.siticoneShadowPanel1.PerformLayout();
             this.siticoneShadowPanel2.ResumeLayout(false);
             this.panelDropDown.ResumeLayout(false);
+            this.mainpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -310,7 +408,6 @@
         private Siticone.UI.WinForms.SiticoneRoundedButton ReportBtn;
         private Siticone.UI.WinForms.SiticoneRoundedButton ProductBtn;
         private Siticone.UI.WinForms.SiticoneRoundedButton UserBtn;
-        private Siticone.UI.WinForms.SiticoneRoundedButton HomeBtn;
         private AntdUI.In.FlowLayoutPanel panelDropDown;
         private Siticone.UI.WinForms.SiticoneRoundedButton SalesRBtn;
         private Siticone.UI.WinForms.SiticoneRoundedButton InventoryRBtn;
@@ -320,5 +417,12 @@
         private System.Windows.Forms.Timer dropDownTimer;
         private System.Windows.Forms.Timer loadingTimer;
         private System.Windows.Forms.Timer fadeTimer;
+        private Siticone.UI.WinForms.SiticoneRoundedButton HomeBtn;
+        private AntdUI.Button button3;
+        private AntdUI.Button button2;
+        private AntdUI.Button button1;
+        private AntdUI.Button button4;
+        private AntdUI.Button button6;
+        private AntdUI.Button button5;
     }
 }

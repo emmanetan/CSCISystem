@@ -39,7 +39,7 @@
             this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.siticoneShadowPanel3.Controls.Add(this.ButtonAddProd);
             this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.siticoneShadowPanel3.Location = new System.Drawing.Point(0, 0);
             this.siticoneShadowPanel3.Name = "siticoneShadowPanel3";
             this.siticoneShadowPanel3.Radius = 10;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(855, 599);
             this.Controls.Add(this.siticoneShadowPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

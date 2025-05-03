@@ -37,7 +37,7 @@
             // 
             this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.siticoneLabel1.ForeColor = System.Drawing.Color.Black;
             this.siticoneLabel1.Location = new System.Drawing.Point(45, 32);
             this.siticoneLabel1.Name = "siticoneLabel1";
             this.siticoneLabel1.Size = new System.Drawing.Size(164, 30);
@@ -49,7 +49,7 @@
             this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.siticoneShadowPanel3.Controls.Add(this.siticoneLabel1);
             this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.siticoneShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.siticoneShadowPanel3.Location = new System.Drawing.Point(0, 0);
             this.siticoneShadowPanel3.Name = "siticoneShadowPanel3";
             this.siticoneShadowPanel3.Radius = 10;
@@ -62,7 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(855, 599);
             this.Controls.Add(this.siticoneShadowPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

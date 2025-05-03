@@ -58,7 +58,7 @@
             this.BtnPOS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnPOS.ForeColor = System.Drawing.Color.White;
             this.BtnPOS.HoveredState.Parent = this.BtnPOS;
-            this.BtnPOS.Location = new System.Drawing.Point(309, 327);
+            this.BtnPOS.Location = new System.Drawing.Point(331, 327);
             this.BtnPOS.Name = "BtnPOS";
             this.BtnPOS.ShadowDecoration.Parent = this.BtnPOS;
             this.BtnPOS.Size = new System.Drawing.Size(180, 45);

@@ -42,7 +42,7 @@ namespace CSCISystem
             if (reportExpand == false)
             {
                 panelDropDown.Height +=10;
-                if (panelDropDown.Height >= 202)
+                if (panelDropDown.Height >= 183)
                 {
                     dropDownTimer.Stop();
                     reportExpand = true;
@@ -51,7 +51,7 @@ namespace CSCISystem
             else
             {
                 panelDropDown.Height -= 10;
-                if (panelDropDown.Height <= 67)
+                if (panelDropDown.Height <= 59)
                 {
                     dropDownTimer.Stop();
                     reportExpand = false;
