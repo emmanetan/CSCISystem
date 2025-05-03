@@ -31,7 +31,7 @@
             this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneShadowPanel3 = new Siticone.UI.WinForms.SiticoneShadowPanel();
             this.labelTime1 = new AntdUI.LabelTime();
-            this.button1 = new AntdUI.Button();
+            this.siticoneLabel2 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneShadowPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             // siticoneShadowPanel3
             // 
             this.siticoneShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneShadowPanel3.Controls.Add(this.button1);
+            this.siticoneShadowPanel3.Controls.Add(this.siticoneLabel2);
             this.siticoneShadowPanel3.Controls.Add(this.labelTime1);
             this.siticoneShadowPanel3.Controls.Add(this.siticoneLabel1);
             this.siticoneShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -74,16 +74,16 @@
             this.labelTime1.TabIndex = 1;
             this.labelTime1.Text = "labelTime1";
             // 
-            // button1
+            // siticoneLabel2
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(94, 176);
-            this.button1.Name = "button1";
-            this.button1.Radius = 20;
-            this.button1.Size = new System.Drawing.Size(213, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Home";
-            this.button1.WaveSize = 0;
+            this.siticoneLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel2.ForeColor = System.Drawing.Color.Black;
+            this.siticoneLabel2.Location = new System.Drawing.Point(361, 283);
+            this.siticoneLabel2.Name = "siticoneLabel2";
+            this.siticoneLabel2.Size = new System.Drawing.Size(132, 40);
+            this.siticoneLabel2.TabIndex = 2;
+            this.siticoneLabel2.Text = "Welcome";
             // 
             // Home
             // 
@@ -106,6 +106,6 @@
         private Siticone.UI.WinForms.SiticoneLabel siticoneLabel1;
         private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel3;
         private AntdUI.LabelTime labelTime1;
-        private AntdUI.Button button1;
+        private Siticone.UI.WinForms.SiticoneLabel siticoneLabel2;
     }
 }

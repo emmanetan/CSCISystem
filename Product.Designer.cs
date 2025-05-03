@@ -56,10 +56,10 @@
             this.ButtonAddProd.Icon = ((System.Drawing.Image)(resources.GetObject("ButtonAddProd.Icon")));
             this.ButtonAddProd.IconRatio = 1F;
             this.ButtonAddProd.IconSize = new System.Drawing.Size(20, 20);
-            this.ButtonAddProd.Location = new System.Drawing.Point(737, 22);
+            this.ButtonAddProd.Location = new System.Drawing.Point(774, 35);
             this.ButtonAddProd.Name = "ButtonAddProd";
             this.ButtonAddProd.Radius = 50;
-            this.ButtonAddProd.Size = new System.Drawing.Size(95, 43);
+            this.ButtonAddProd.Size = new System.Drawing.Size(43, 34);
             this.ButtonAddProd.TabIndex = 1;
             this.ButtonAddProd.WaveSize = 0;
             this.ButtonAddProd.Click += new System.EventHandler(this.ButtonAddProd_Click);

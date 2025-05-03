@@ -20,6 +20,7 @@ namespace CSCISystem
         private void Inventory_Load(object sender, EventArgs e)
         {
             loadingTimer.Start();
+           
         }
         private void Loadform(object Form)
         {
